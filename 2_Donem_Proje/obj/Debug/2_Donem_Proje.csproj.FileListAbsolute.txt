@@ -1,0 +1,13 @@
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\bin\Debug\2_Donem_Proje.exe.config
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\bin\Debug\2_Donem_Proje.exe
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\bin\Debug\2_Donem_Proje.pdb
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\2_Donem_Proje.csprojAssemblyReference.cache
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Proje.Form1.resources
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Proje.Properties.Resources.resources
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\2_Donem_Proje.csproj.GenerateResource.cache
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\2_Donem_Proje.csproj.CoreCompileInputs.cache
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\2_Donem_Proje.exe
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\2_Donem_Proje.pdb
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Proje.Egitim_Form.resources
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Proje.Test_Form.resources
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Proje.İstatislikForm.resources
