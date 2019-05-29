@@ -44,9 +44,12 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tESTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.egitimiBaşlatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.istatisliklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yENİLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label4 = new System.Windows.Forms.Label();
             this.textörnek = new System.Windows.Forms.TextBox();
-            this.istatisliklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmbtur = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -143,7 +146,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(758, 305);
+            this.button1.Location = new System.Drawing.Point(763, 355);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(197, 33);
             this.button1.TabIndex = 3;
@@ -154,7 +157,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(758, 370);
+            this.button2.Location = new System.Drawing.Point(763, 420);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(197, 33);
             this.button2.TabIndex = 3;
@@ -170,7 +173,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tESTToolStripMenuItem,
             this.egitimiBaşlatToolStripMenuItem,
-            this.istatisliklerToolStripMenuItem});
+            this.istatisliklerToolStripMenuItem,
+            this.yENİLEToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1050, 40);
@@ -194,6 +198,22 @@
             this.egitimiBaşlatToolStripMenuItem.Text = "Egitimi Başlat";
             this.egitimiBaşlatToolStripMenuItem.Click += new System.EventHandler(this.egitimiBaşlatToolStripMenuItem_Click);
             // 
+            // istatisliklerToolStripMenuItem
+            // 
+            this.istatisliklerToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.istatisliklerToolStripMenuItem.Name = "istatisliklerToolStripMenuItem";
+            this.istatisliklerToolStripMenuItem.Size = new System.Drawing.Size(116, 36);
+            this.istatisliklerToolStripMenuItem.Text = "İstatislikler";
+            this.istatisliklerToolStripMenuItem.Click += new System.EventHandler(this.istatisliklerToolStripMenuItem_Click);
+            // 
+            // yENİLEToolStripMenuItem
+            // 
+            this.yENİLEToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.yENİLEToolStripMenuItem.Name = "yENİLEToolStripMenuItem";
+            this.yENİLEToolStripMenuItem.Size = new System.Drawing.Size(99, 36);
+            this.yENİLEToolStripMenuItem.Text = "YENİLE";
+            this.yENİLEToolStripMenuItem.Click += new System.EventHandler(this.yENİLEToolStripMenuItem_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -213,25 +233,39 @@
             this.textörnek.Size = new System.Drawing.Size(155, 41);
             this.textörnek.TabIndex = 2;
             // 
-            // istatisliklerToolStripMenuItem
+            // cmbtur
             // 
-            this.istatisliklerToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.istatisliklerToolStripMenuItem.Name = "istatisliklerToolStripMenuItem";
-            this.istatisliklerToolStripMenuItem.Size = new System.Drawing.Size(116, 36);
-            this.istatisliklerToolStripMenuItem.Text = "İstatislikler";
-            this.istatisliklerToolStripMenuItem.Click += new System.EventHandler(this.istatisliklerToolStripMenuItem_Click);
+            this.cmbtur.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbtur.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbtur.FormattingEnabled = true;
+            this.cmbtur.Location = new System.Drawing.Point(877, 281);
+            this.cmbtur.Name = "cmbtur";
+            this.cmbtur.Size = new System.Drawing.Size(155, 33);
+            this.cmbtur.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(731, 280);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 25);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Türü:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 450);
+            this.ClientSize = new System.Drawing.Size(1050, 538);
+            this.Controls.Add(this.cmbtur);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textörnek);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textsoru);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textturkce);
             this.Controls.Add(this.label2);
@@ -272,6 +306,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textörnek;
         private System.Windows.Forms.ToolStripMenuItem istatisliklerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yENİLEToolStripMenuItem;
+        private System.Windows.Forms.ComboBox cmbtur;
+        private System.Windows.Forms.Label label5;
     }
 }
 

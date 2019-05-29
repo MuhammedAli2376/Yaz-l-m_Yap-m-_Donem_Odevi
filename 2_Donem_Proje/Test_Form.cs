@@ -36,6 +36,8 @@ namespace _2_Donem_Proje
                 {
                     if (Kelimeler.Dizi[sayac].Tekrar < DateTime.Now)
                     {
+                        gez.Visible = true;
+                        button1.Visible = true;
                         if (gez2 is Label)
                             gez2.Text = Kelimeler.Dizi[sayac].Soru;
                         else

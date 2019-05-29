@@ -9,58 +9,83 @@ namespace _2_Donem_Proje
    public class Kelimeler
     {
         int Sayac = 0;
+        int sayac2 = 0;
         public static  Kelime[] Dizi = new Kelime[0];
-        public void Ekle(Kelime kok,string ingilizce, string turkce, string cumle,string Soru,DateTime tekrar,int seviye,int id)
+        public static Kelime[] Dizi2 = new Kelime[0];
+        public void Ekle(Kelime kok,string ingilizce, string turkce,int Turu, string cumle,string Soru,DateTime tekrar,int seviye,int id)
         {
-            if (seviye != 3)
+            if (kok.Tekrar < tekrar)
             {
-                if (kok.Tekrar < tekrar)
+                if (kok.Sag == null)
                 {
-                    if (kok.Sag == null)
-                    {
-                        kok.Sag = new Kelime();
-                        kok.Sag.Ingilizce = ingilizce;
-                        kok.Sag.Turkce = turkce;
-                        kok.Sag.OrnekCumle = cumle;
-                        kok.Sag.Soru = Soru;
-                        kok.Sag.Tekrar = tekrar;
-                        kok.Sag.Seviye = seviye;
-                        kok.Sag.ID = id;
+                    kok.Sag = new Kelime();
+                    kok.Sag.Ingilizce = ingilizce;
+                    kok.Sag.Turkce = turkce;
+                    kok.Sag.Turu = Turu;
+                    kok.Sag.OrnekCumle = cumle;
+                    kok.Sag.Soru = Soru;
+                    kok.Sag.Tekrar = tekrar;
+                    kok.Sag.Seviye = seviye;
+                    kok.Sag.ID = id;
 
-                        return;
-                    }
-                    Ekle(kok.Sag, ingilizce, turkce, cumle, Soru, tekrar, seviye, id);
+                    return;
                 }
-                else
+                Ekle(kok.Sag, ingilizce, turkce,Turu, cumle, Soru, tekrar, seviye, id);
+            }
+            else
+            {
+                if (kok.Sol == null)
                 {
-                    if (kok.Sol == null)
-                    {
-                        kok.Sol = new Kelime();
-                        kok.Sol.Ingilizce = ingilizce;
-                        kok.Sol.Turkce = turkce;
-                        kok.Sol.OrnekCumle = cumle;
-                        kok.Sol.Soru = Soru;
-                        kok.Sol.Tekrar = tekrar;
-                        kok.Sol.ID = id;
-                        return;
-                    }
-                    Ekle(kok.Sol, ingilizce, turkce, cumle, Soru, tekrar, seviye, id);
+                    kok.Sol = new Kelime();
+                    kok.Sol.Ingilizce = ingilizce;
+                    kok.Sol.Turkce = turkce;
+                    kok.Sol.Turu = Turu;
+                    kok.Sol.OrnekCumle = cumle;
+                    kok.Sol.Soru = Soru;
+                    kok.Sol.Tekrar = tekrar;
+                    kok.Sol.Seviye = seviye;
+                    kok.Sol.ID = id;
+                    return;
                 }
+                Ekle(kok.Sol, ingilizce, turkce,Turu, cumle, Soru, tekrar, seviye, id);
             }
         }
-        public void InOrderInt(Kelime dugum)
+        public void Tamamlanmis(Kelime dugum)
         {
             if (dugum == null)
                 return;
-            InOrderInt(dugum.Sol);
-            Ziyaret(dugum);
-            InOrderInt(dugum.Sag);
+            Tamamlanmis(dugum.Sol);
+            Tamamlanmis_Ziyaret(dugum);
+            Tamamlanmis(dugum.Sag);
         }
-        private void Ziyaret(Kelime dugum)
+        private void Tamamlanmis_Ziyaret(Kelime dugum)
         {
-            Array.Resize(ref Dizi, Dizi.Length + 1);
-            Dizi[Sayac] = dugum;
-            Sayac++;
+            if (dugum.Seviye == 3)
+            {
+                Array.Resize(ref Dizi2, Dizi2.Length + 1);
+                Dizi2[sayac2] = dugum;
+                sayac2++;
+            }
         }
+        public void Tamamlanmamis(Kelime dugum)
+        {
+            if (dugum == null)
+                return;
+            Tamamlanmamis(dugum.Sol);
+            Tamamlanmamis_Ziyaret(dugum);
+            Tamamlanmamis(dugum.Sag);
+        }
+        private void Tamamlanmamis_Ziyaret(Kelime dugum)
+        {
+            if (dugum.Seviye != 3)
+            {
+                Array.Resize(ref Dizi, Dizi.Length + 1);
+                Dizi[Sayac] = dugum;
+                Sayac++;
+            }
+        }
+      
+
+
     }
 }

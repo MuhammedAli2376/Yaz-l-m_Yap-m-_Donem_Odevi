@@ -73,11 +73,19 @@
     <Compile Include="Test_Form.Designer.cs">
       <DependentUpon>Test_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Turler.cs" />
+    <Compile Include="TurORM.cs" />
     <Compile Include="İstatislikForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="İstatislikForm.Designer.cs">
       <DependentUpon>İstatislikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İstatislik_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İstatislik_Form.Designer.cs">
+      <DependentUpon>İstatislik_Form.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Egitim_Form.resx">
       <DependentUpon>Egitim_Form.cs</DependentUpon>
@@ -99,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="İstatislikForm.resx">
       <DependentUpon>İstatislikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İstatislik_Form.resx">
+      <DependentUpon>İstatislik_Form.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -11,3 +11,4 @@ D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\2_Donem_Proj
 D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Proje.Egitim_Form.resources
 D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Proje.Test_Form.resources
 D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Proje.İstatislikForm.resources
+D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Proje.İstatislik_Form.resources

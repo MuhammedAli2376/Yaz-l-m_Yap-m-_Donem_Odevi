@@ -15,6 +15,7 @@ namespace _2_Donem_Proje
         public string Turkce { get; set; }
         public string OrnekCumle { get; set; }
         public string Soru { get; set; }
+        public int Turu { get; set; }
         public int Seviye { get; set; }
         public DateTime Tekrar { get; set; }
         public Kelime()

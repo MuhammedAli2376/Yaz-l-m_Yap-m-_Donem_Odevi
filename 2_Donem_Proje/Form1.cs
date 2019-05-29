@@ -23,6 +23,7 @@ namespace _2_Donem_Proje
             k.Turkce = textturkce.Text;
             k.OrnekCumle = textörnek.Text;
             k.Soru = textsoru.Text;
+            k.Turu = (int)cmbtur.SelectedValue;
             k.Tekrar = DateTime.Now;
             k.Seviye = 0;
             if (korm.Ekle<Kelime>(k))
@@ -43,7 +44,14 @@ namespace _2_Donem_Proje
         private void Form1_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = korm.Listele<Kelime>();
+            TurORM orm = new TurORM();
+            cmbtur.DataSource = orm.Listele<Turler>();
+            cmbtur.DisplayMember = "Adi";
+            cmbtur.ValueMember = "id";
             Aktar();
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[7].Visible = false;
+            dataGridView1.Columns[8].Visible = false;
         }
 
         private void sİlToolStripMenuItem_Click(object sender, EventArgs e)
@@ -77,6 +85,7 @@ namespace _2_Donem_Proje
             k.Ingilizce = textingilizce.Text;
             k.Turkce = textturkce.Text;
             k.OrnekCumle = textörnek.Text;
+            k.Turu = (int)cmbtur.SelectedValue;
             k.Soru = textsoru.Text;
             k.Tekrar = DateTime.Now;
             k.Seviye = 0;
@@ -109,10 +118,12 @@ namespace _2_Donem_Proje
                 DateTime tekrar = Convert.ToDateTime(dataGridView1.Rows[i].Cells["Tekrar"].Value);
                 int id = Convert.ToInt16(dataGridView1.Rows[i].Cells["ID"].Value);
                 int seviye = Convert.ToInt16(dataGridView1.Rows[i].Cells["Seviyesi"].Value);
+                int id2 = Convert.ToInt16(dataGridView1.Rows[i].Cells["id1"].Value);
                 if (i == 0)
                 {
                     k.Ingilizce = Ingilizce;
                     k.Turkce = Turkce;
+                    k.Turu = id2;
                     k.OrnekCumle = ornek;
                     k.Soru = Soru;
                     k.Tekrar = tekrar;
@@ -120,9 +131,10 @@ namespace _2_Donem_Proje
                     k.ID = id;
                 }
                 else
-                   kl.Ekle(k, Ingilizce, Turkce,ornek, Soru, tekrar,seviye,id);
+                   kl.Ekle(k, Ingilizce, Turkce,id2,ornek, Soru, tekrar,seviye,id);
             }
-            kl.InOrderInt(k);
+            kl.Tamamlanmamis(k);
+            kl.Tamamlanmis(k);
         }
         private void tESTToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -145,6 +157,14 @@ namespace _2_Donem_Proje
         {
             İstatislikForm frm = new İstatislikForm();
             frm.ShowDialog();
+        }
+
+        private void yENİLEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Kelimeler.Dizi = new Kelime[0];
+            Kelimeler.Dizi2 = new Kelime[0];
+            Aktar();
+            dataGridView1.DataSource = korm.Listele<Kelime>();
         }
     }
 }
