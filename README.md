@@ -1,0 +1,1 @@
+ingilizce kelime Otomasyon sistemi

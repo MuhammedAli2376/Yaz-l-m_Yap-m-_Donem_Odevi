@@ -38,7 +38,7 @@ namespace _2_Donem_Proje
             }
                 
             else
-                MessageBox.Show("HAta");
+                MessageBox.Show("Hata");
         }
 
         private void Form1_Load(object sender, EventArgs e)

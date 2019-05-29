@@ -26,11 +26,13 @@ namespace _2_Donem_Proje
             labelingilizce.Text = Kelimeler.Dizi[sayac].Ingilizce;
             labelturkce.Text = Kelimeler.Dizi[sayac].Turkce;
             labelcumle.Text = Kelimeler.Dizi[sayac].OrnekCumle;
+            
         }
         private void button2_Click(object sender, EventArgs e)
         {
            sayac--;
            Yaz();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
