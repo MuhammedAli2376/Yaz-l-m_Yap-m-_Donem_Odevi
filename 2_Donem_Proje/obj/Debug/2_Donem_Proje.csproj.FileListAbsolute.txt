@@ -12,3 +12,16 @@ D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Pro
 D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Proje.Test_Form.resources
 D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Proje.İstatislikForm.resources
 D:\Toplu\uygulamalar\Projeler\2_Donem_Proje\2_Donem_Proje\obj\Debug\_2_Donem_Proje.İstatislik_Form.resources
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\obj\Debug\2_Donem_Proje.exe
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\obj\Debug\2_Donem_Proje.pdb
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\bin\Debug\2_Donem_Proje.exe.config
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\bin\Debug\2_Donem_Proje.exe
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\bin\Debug\2_Donem_Proje.pdb
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\obj\Debug\2_Donem_Proje.csprojAssemblyReference.cache
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\obj\Debug\_2_Donem_Proje.Egitim_Form.resources
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\obj\Debug\_2_Donem_Proje.Form1.resources
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\obj\Debug\_2_Donem_Proje.Properties.Resources.resources
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\obj\Debug\_2_Donem_Proje.Test_Form.resources
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\obj\Debug\_2_Donem_Proje.İstatislikForm.resources
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\obj\Debug\2_Donem_Proje.csproj.GenerateResource.cache
+C:\Users\CEM\Desktop\Yeni klasör\Yazilim_yapimi_donem_odevi\2_Donem_Proje\obj\Debug\2_Donem_Proje.csproj.CoreCompileInputs.cache

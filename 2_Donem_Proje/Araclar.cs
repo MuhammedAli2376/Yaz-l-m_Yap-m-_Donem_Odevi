@@ -15,7 +15,7 @@ namespace _2_Donem_Proje
             get
             {
                 if(baglanti==null)
-                    baglanti = new SqlConnection("Server=DESKTOP-TO5VRLK\\SQLEXPRESS;Database=Sozluk;Integrated Security=true");
+                    baglanti = new SqlConnection("Data Source=DESKTOP-BHGQ8AJ;Initial Catalog=Sozluk;Integrated Security=True");
                 return baglanti;
             }
         }

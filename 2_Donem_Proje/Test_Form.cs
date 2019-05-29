@@ -86,7 +86,7 @@ namespace _2_Donem_Proje
                 if (k1 is GroupBox)
                     sayac++;
             }
-            MessageBox.Show(string.Format("{0} tane doğru çevapladınız", say));
+            MessageBox.Show(string.Format("{0} tane doğru cevapladınız", say));
             this.Close();
         }
 
